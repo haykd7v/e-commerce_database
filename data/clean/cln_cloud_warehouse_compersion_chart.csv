@@ -1,0 +1,51 @@
+shiprocket,increff,qty,amount
+Heads,Price (Per Unit),1,65.02
+Inbound (Fresh Stock and RTO),4,1,59.95
+Outbound,11,1,138.31
+Storage Fee/Cft,Rs 0.15/- Per Day,1,52.3
+Customer Return with Detailed QC,15.5,1,132.22
+(A) SCOPE OF WORK and STANDARD OPERATING PROCEDURE,,1,433.6
+Inward,• Boxes counted and weighed. Data captured in the Maven.,1,82.7
+,• GRN will be initiated against a valid PO document and Invoice will be captured,1,328.11
+,• No QC to be done (Outer Visual Inspection and Color matching),1,492.64
+,"•  Scanning (Goods will have scannable EAN code or unique barcodes) and counting of all inventory, verification of all data by supervisor and completion of GRN. Detailed report is made available",1,173.57
+,• Mobile HHT based Putaway to accurately record warehouse location for every item/roll,1,16.85
+,,1,286.91
+Outward,•  Orders will be received through integration directly into Maven or directly to Maven by the client,1,199.81
+,• System driven optimised picking with real-time inventory correction by marking Not Found and alternate locations suggested,1,25.1
+,• System driven packing by putting products into Polybags to maintain accuracy and generate pack slips,1,370.12
+,• Print the invoice as generated through integration or provided by the client ,1,250.4
+,• Shipping labels and AWB via integration with vendors and generation of digital manifests to ensure accuracy,1,75.93
+,• Digital PODs from vendors if available via integration,1,146.89
+,,1,485.71
+Returns,•  RTO and Customer Returns are received and Inwarded in the warehouse Outer package visible inspection is done before inwarding ,1,376.99
+,,1,364.9
+Inventory management,•  Daily cycle count to maintain accuracy and deliver SLAs without disrupting regular operations. Complete Inventory to be covered in 3 months.,1,420.13
+,•  Any quantity not found during Cycle Count shall be parked in a non-serviceable location in Maven,1,390.41
+,• Annual wall to wall Audit including global count driven by system to ensure speed while eliminating human error,1,145.82
+(B) MISCELLANEOUS,,1,147.31
+,,1,341.07
+,,1,210.58
+,,1,138.6
+© EXCLUSIONS,,1,427.96
+,,1,185.01
+,,1,100.75
+,,1,473.3
+,,1,157.82
+,,1,24.13
+,,1,165.56
+(D) KEY PERFORMANCE INDICATORS AND COMMERCIALS,,1,37.68
+Performance Indicators,,1,48.3
+Performance Measure,Target,1,475.72
+Monthly Fill Rate,>99.8%,1,31.27
+,,1,392.19
+Daily Processing Capacity,,1,233.87
+,,1,37.23
+,,1,410.65
+Customer Complaints,<0.2%,1,169.56
+,,1,286.46
+Allowed Shrinkage,<0.2%,1,122.34
+,1 Annual Audit is included in the commercials,1,300.82
+Penalty,2x of the service fee per affected qty,1,111.79
+,10% of monthly billing; not applicable if there are outstanding payments; no cap on shrinkage,1,179.5
+Others,7 days per week,1,372.25
