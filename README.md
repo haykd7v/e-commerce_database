@@ -13,6 +13,23 @@
 
 Este projeto simula um fluxo de trabalho de dados ponta a ponta, desde a ingestão de dados brutos até a geração de insights acionáveis. O processo consiste em um pipeline de **ETL (Extração, Transformação e Carga)** que coleta dados de 7 fontes CSV distintas, os limpa, padroniza e carrega em um banco de dados PostgreSQL. Posteriormente, um notebook de análise consome esses dados tratados para explorar o desempenho de vendas, identificar tendências e visualizar os principais indicadores de negócio.
 
+**Etapa 1: Dados Brutos (/data/raw)**
+O ponto de partida foram 7 arquivos CSV com origens e estruturas distintas. Os dados nesta fase apresentavam inconsistências como nomes de colunas sem padrão, formatos de data variados e tipos de dados mistos.
+
+**Etapa 2: Script de ETL (pre_processamento.py)**
+O script de pré-processamento foi desenvolvido para automatizar a limpeza. A cada execução, ele realiza as seguintes tarefas:
+- **Extração:** Lê os arquivos CSV padronizados da pasta /data/raw.
+- **Transformação:** Aplica as regras de limpeza definidas na configuração `FILE_CONFIG`, como padronização de colunas para `snake_case`, conversão de datas e tratamento de dados faltantes.
+- **Carga:** Carrega os DataFrames limpos em um banco de dados PostgreSQL, criando tabelas padronizadas (cln_...). Simultaneamente, salva uma cópia dos arquivos limpos na pasta `/data/clean` para fins de portfólio.
+
+**Etapa 3: Banco de Dados (PostgreSQ)**
+O PostgreSQL atua como a **fonte única da verdade** para a análise. Armazenar os dados limpos em um banco de dados garante que a etapa de análise seja desacoplada da limpeza, seguindo as melhores práticas de engenharia de dados.
+
+**Etapa 4: Análise e Insights (analise.ipynb)**
+O Jupyter Notebook de análise conecta-se exclusivamente ao banco de dados para consumir os dados já tratados. É nesta fase que os dados de diferentes fontes são consolidados e as perguntas de negócio são respondidas através de agregações, cálculos e, finalmente, a criação dos gráficos e a extração dos insights apresentados neste documento.
+
+---
+
 ---
 
 ## ✨ Features Principais
